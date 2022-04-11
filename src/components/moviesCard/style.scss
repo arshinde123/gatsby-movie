@@ -1,0 +1,31 @@
+.movie-card {
+	max-width: 30rem;
+	box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+
+	.movie-title {
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis; 
+	}
+
+	.movie-shortlist-btn {
+		margin-left: 1px;
+	}
+	
+	.movie-overview {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+
+		@media (max-width: 767.98px) {
+			-webkit-line-clamp: 1;
+		}
+	}
+
+	.genres {
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis; 
+	}
+}
